@@ -1,9 +1,9 @@
 class Humanlog < Formula
   desc "Logs for humans to read."
   homepage "https://github.com/aybabtme/humanlog"
-  url "https://github.com/aybabtme/humanlog/releases/download/0.1.19/humanlog_Darwin_x86_64.tar.gz"
-  version "0.1.19"
-  sha256 "d97916ef467dd7871ead6d3ab9bf778ed5d52f624c8627cbaa8ef2ca350989ec"
+  url "https://github.com/aybabtme/humanlog/releases/download/0.2.0/humanlog_Darwin_x86_64.tar.gz"
+  version "0.2.0"
+  sha256 "8d19bb8936dad94a7981047cb373e5872919c0a6e18754644fb51d9f7d393c5d"
 
   def install
     bin.install "humanlog"
