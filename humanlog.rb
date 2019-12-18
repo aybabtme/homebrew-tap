@@ -2,16 +2,16 @@
 class Humanlog < Formula
   desc ""
   homepage ""
-  version "0.3.1"
+  version "0.3.2"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/aybabtme/humanlog/releases/download/0.3.1/humanlog_0.3.1_darwin_amd64.tar.gz"
-    sha256 "95f5ad9e5ea3fedf82effa85e31c5a188e49869e17fb7a4f678986e31214f2dd"
+    url "https://github.com/aybabtme/humanlog/releases/download/0.3.2/humanlog_0.3.2_darwin_amd64.tar.gz"
+    sha256 "b0e9ccb6454fe21ea34309b838b7afab26c40fb089140b7c3289a7e40b806094"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/aybabtme/humanlog/releases/download/0.3.1/humanlog_0.3.1_linux_amd64.tar.gz"
-      sha256 "28e7516342b6c41c70bf718e8a6f3dd00379f93efa63fa942695d7604e791be0"
+      url "https://github.com/aybabtme/humanlog/releases/download/0.3.2/humanlog_0.3.2_linux_amd64.tar.gz"
+      sha256 "d9ba3e2b93f116e5504ab29ce625e7d083c98934511010e4df8af370c0e0097f"
     end
   end
 
