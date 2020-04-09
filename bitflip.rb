@@ -2,20 +2,20 @@
 class Bitflip < Formula
   desc ""
   homepage ""
-  version "0.1.2"
+  version "0.1.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/aybabtme/bitflip/releases/download/v0.1.2/flipbit_0.1.2_Darwin_x86_64.tar.gz"
-    sha256 "064e2d2c1fee2c21850ff80ddaffc3523d5f8cd0714fbba1c905444e071051fd"
+    url "https://github.com/aybabtme/bitflip/releases/download/v0.1.3/bitflip_0.1.3_Darwin_x86_64.tar.gz"
+    sha256 "458c89a473e30d8f6ea2f5e02c3c7bd158710656206529d069e43df4d35da959"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/aybabtme/bitflip/releases/download/v0.1.2/flipbit_0.1.2_Linux_x86_64.tar.gz"
-      sha256 "0085555aef5e753152b41e452d9ad04c7fce6e358b0ba13c5b4bcb1f2298b2e9"
+      url "https://github.com/aybabtme/bitflip/releases/download/v0.1.3/bitflip_0.1.3_Linux_x86_64.tar.gz"
+      sha256 "d0b1c3317ba6092dc6a6f3fd3c39bc32ef6c8ab8f04a76110ff8d0276a122679"
     end
   end
 
   def install
-    bin.install "flipbit"
+    bin.install "bitflip"
   end
 end
