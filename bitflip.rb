@@ -2,16 +2,16 @@
 class Bitflip < Formula
   desc ""
   homepage ""
-  version "0.1.3"
+  version "0.2.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/aybabtme/bitflip/releases/download/v0.1.3/bitflip_0.1.3_Darwin_x86_64.tar.gz"
-    sha256 "458c89a473e30d8f6ea2f5e02c3c7bd158710656206529d069e43df4d35da959"
+    url "https://github.com/aybabtme/bitflip/releases/download/v0.2.0/bitflip_0.2.0_Darwin_x86_64.tar.gz"
+    sha256 "72fb3982421015749089d088559b82731a15c25f8e6057fd899d481963c9a64f"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/aybabtme/bitflip/releases/download/v0.1.3/bitflip_0.1.3_Linux_x86_64.tar.gz"
-      sha256 "d0b1c3317ba6092dc6a6f3fd3c39bc32ef6c8ab8f04a76110ff8d0276a122679"
+      url "https://github.com/aybabtme/bitflip/releases/download/v0.2.0/bitflip_0.2.0_Linux_x86_64.tar.gz"
+      sha256 "926b2ffdddd15f7ed660ee8a78fcd46037f0b94395173a63e1080300289602cc"
     end
   end
 
