@@ -2,16 +2,16 @@
 class Temple < Formula
   desc ""
   homepage ""
-  version "0.2.3"
+  version "0.2.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/aybabtme/temple/releases/download/v0.2.3/temple_0.2.3_Darwin_x86_64.tar.gz"
-    sha256 "0d116f771d5dff00c3c3f8bbe46ef199bd4f95abce576c3120ca139dec15540f"
+    url "https://github.com/aybabtme/temple/releases/download/v0.2.4/temple_0.2.4_Darwin_x86_64.tar.gz"
+    sha256 "821fdd39b79b84f586bdedc42d59cd8abb14572a95a632608de636d422299bf2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/aybabtme/temple/releases/download/v0.2.3/temple_0.2.3_Linux_x86_64.tar.gz"
-      sha256 "5e79ddbf7622369e976f788a1753bfd99a5e440e68a7ab866c2469b8fed7642b"
+      url "https://github.com/aybabtme/temple/releases/download/v0.2.4/temple_0.2.4_Linux_x86_64.tar.gz"
+      sha256 "68c4536901dbbf9af0ae7213b5aa8b8caf5cb841a80aa498372673977268f661"
     end
   end
 
