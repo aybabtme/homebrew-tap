@@ -6,12 +6,12 @@ class Humanlog < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/aybabtme/humanlog/releases/download/v0.4.1/humanlog_0.4.1_darwin_amd64.tar.gz"
-    sha256 "d81fb11a57d1ceec9b42b5b971b29f0dccea38a235dd9ad6515d2a727eb26244"
+    url "https://github.com/aybabtme/humanlog/releases/download/0.4.1/humanlog_0.4.1_darwin_amd64.tar.gz"
+    sha256 "681ea582d179b8b1ec474e1aae4d22cc2949c2d5bdedd462861d6d17786485c2"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/aybabtme/humanlog/releases/download/v0.4.1/humanlog_0.4.1_linux_amd64.tar.gz"
-      sha256 "b26659d7f576b062d7df0d6101252629a73140cb0ea73252cd622aeb3e0e6353"
+      url "https://github.com/aybabtme/humanlog/releases/download/0.4.1/humanlog_0.4.1_linux_amd64.tar.gz"
+      sha256 "0879e30610faf8834e1df4bd0c45e83ec556c4ad8df8b5048cc0f4083b044a32"
     end
   end
 
