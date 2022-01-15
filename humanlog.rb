@@ -6,7 +6,6 @@ class Humanlog < Formula
   desc ""
   homepage ""
   version "0.5.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/aybabtme/humanlog/releases/download/0.5.0/humanlog_0.5.0_darwin_amd64.tar.gz"
