@@ -3,7 +3,6 @@ class Bitflip < Formula
   desc ""
   homepage ""
   version "0.2.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/aybabtme/bitflip/releases/download/v0.2.0/bitflip_0.2.0_Darwin_x86_64.tar.gz"
