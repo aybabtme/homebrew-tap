@@ -3,7 +3,6 @@ class Temple < Formula
   desc ""
   homepage ""
   version "0.2.4"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/aybabtme/temple/releases/download/v0.2.4/temple_0.2.4_Darwin_x86_64.tar.gz"
