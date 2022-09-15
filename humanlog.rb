@@ -5,18 +5,35 @@
 class Humanlog < Formula
   desc ""
   homepage ""
-  version "0.5.0"
+  version "0.6.0"
 
-  if OS.mac?
-    url "https://github.com/aybabtme/humanlog/releases/download/0.5.0/humanlog_0.5.0_darwin_amd64.tar.gz"
-    sha256 "37f047366059bd073c1f1a7640e9957f5f0c253c266d67f71f2ce30116a5683e"
-  end
-  if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/aybabtme/humanlog/releases/download/0.5.0/humanlog_0.5.0_linux_amd64.tar.gz"
-    sha256 "fc68c9ea3f5c0dca2b4c869be01900c249bef68400a194bf8f1a9dee733b49e7"
+  on_macos do
+    url "https://github.com/aybabtme/humanlog/releases/download/0.6.0/humanlog_0.6.0_darwin_amd64.tar.gz"
+    sha256 "9a338e5c4de8dac00682362a55996389f57c2e464c9dffce6dd7cd390ef92217"
+
+    def install
+      bin.install "humanlog"
+    end
+
+    if Hardware::CPU.arm?
+      def caveats
+        <<~EOS
+          The darwin_arm64 architecture is not supported for the Humanlog
+          formula at this time. The darwin_amd64 binary may work in compatibility
+          mode, but it might not be fully supported.
+        EOS
+      end
+    end
   end
 
-  def install
-    bin.install "humanlog"
+  on_linux do
+    if Hardware::CPU.intel?
+      url "https://github.com/aybabtme/humanlog/releases/download/0.6.0/humanlog_0.6.0_linux_amd64.tar.gz"
+      sha256 "ba9bc236e9124a12297d2f3ffcf68cf4901a6f78f3ecc5809e3c7b7972b1f03b"
+
+      def install
+        bin.install "humanlog"
+      end
+    end
   end
 end
