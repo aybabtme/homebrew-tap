@@ -5,23 +5,23 @@
 class Bitflip < Formula
   desc ""
   homepage ""
-  version "0.2.1"
+  version "0.2.2"
 
   on_macos do
-    url "https://github.com/aybabtme/bitflip/releases/download/v0.2.1/bitflip_ 0.2.1_Darwin_x86_64.tar.gz"
-    sha256 "a1cbe4c252876b492046025276ad813f7b462d4ec9b844550724dc445b25574a"
+    on_intel do
+      url "https://github.com/aybabtme/bitflip/releases/download/v0.2.2/bitflip_ 0.2.2_Darwin_x86_64.tar.gz"
+      sha256 "ae9ce3e97f928ff9ee081771ceaac0513997301c75d0eee96ab5d1c7e8103386"
 
-    def install
-      bin.install "bitflip"
+      def install
+        bin.install "bitflip"
+      end
     end
-
     on_arm do
-      def caveats
-        <<~EOS
-          The darwin_arm64 architecture is not supported for the Bitflip
-          formula at this time. The darwin_amd64 binary may work in compatibility
-          mode, but it might not be fully supported.
-        EOS
+      url "https://github.com/aybabtme/bitflip/releases/download/v0.2.2/bitflip_ 0.2.2_Darwin_arm64.tar.gz"
+      sha256 "555e9a8b89f45dccd8d27c585032bd4d772bef698ddcd87a3c6744d72d24ff01"
+
+      def install
+        bin.install "bitflip"
       end
     end
   end
@@ -29,8 +29,18 @@ class Bitflip < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aybabtme/bitflip/releases/download/v0.2.1/bitflip_ 0.2.1_Linux_x86_64.tar.gz"
-        sha256 "199956059476feaec38239d36d0679f57f9438070e41e556a08de44dbd0feefd"
+        url "https://github.com/aybabtme/bitflip/releases/download/v0.2.2/bitflip_ 0.2.2_Linux_x86_64.tar.gz"
+        sha256 "f17915523f81e08de3506fd5dbf23378ecd2c3319f92f0a66554d773298a941b"
+
+        def install
+          bin.install "bitflip"
+        end
+      end
+    end
+    on_arm do
+      if Hardware::CPU.is_64_bit?
+        url "https://github.com/aybabtme/bitflip/releases/download/v0.2.2/bitflip_ 0.2.2_Linux_arm64.tar.gz"
+        sha256 "b8e32d576cf6f63e8dcaf93d63039a4be0546b40f1bf381a7a1f21982b5aa367"
 
         def install
           bin.install "bitflip"
